@@ -42,7 +42,7 @@ else
             #else
                 # The asset is too old, skip the app
                 #echo "Skipping patch YouTube because the asset of $repo2 is older than $time_threshold hour(s)"
-            fi
+            #fi
         else
             # There are no assets, skip the app
             echo "Skipping patch YouTube because there are no assets in $repo2"
