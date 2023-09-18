@@ -31,7 +31,7 @@ dl_yt() {
 
 # Get highest supported version 
 get_version() {
-  version=""
+  version="17.03.38"
   versions=$(jq -r '.[].compatiblePackages[] | select(.name == "com.google.android.youtube") | .versions[]' patches.json)
   for ver in $versions; do
     if [[ $ver != null && ( -z $version || $ver > $version ) ]]; then
