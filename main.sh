@@ -33,15 +33,15 @@ else
             # Calculate the difference in hours
             difference=$(( ($(date -u -d "$current_time" +"%s") - $(date -u -d "$published_time" +"%s")) / 3600 ))
 
-            if [[ $difference -le $time_threshold ]]; then
+            #if [[ $difference -le $time_threshold ]]; then
                 # The asset is published within the time threshold, build the app
-                dl_gh
-                get_version
-                dl_yt $version youtube-v$version.apk
-                patch_ytrv
-            else
+                #dl_gh
+                #get_version
+                #dl_yt $version youtube-v$version.apk
+                #patch_ytrv
+            #else
                 # The asset is too old, skip the app
-                echo "Skipping patch YouTube because the asset of $repo2 is older than $time_threshold hour(s)"
+                #echo "Skipping patch YouTube because the asset of $repo2 is older than $time_threshold hour(s)"
             fi
         else
             # There are no assets, skip the app
