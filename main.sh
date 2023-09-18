@@ -3,7 +3,7 @@ source utils.sh
 
 repo1="$GITHUB_REPOSITORY"
 repo2="revanced/revanced-patches"
-time_threshold=1
+time_threshold=0
 
 current_time=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
